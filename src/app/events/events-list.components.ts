@@ -6,8 +6,8 @@ import { Component } from '@angular/core'
     <div>
         <h1>Upcoming Angular events</h1>
         <hr/>
-        <event-thumbnail [event]="event1"></event-thumbnail>
-    </div>
+        <event-thumbnail #thumbnail [event]="event1"></event-thumbnail>
+        </div>
     `
 })
 
@@ -16,7 +16,7 @@ export class EventsListComponent {
         id: 1,
         name: 'Angular Connect',
         date: '9/26/2036',
-        time: '10:100 am',
+        time: '10:10 am',
         price: 599.99,
         imageURL: '/assets/images/angularconnect-shield.png',
      location: {
